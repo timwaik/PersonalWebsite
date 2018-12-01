@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+
+<html lang="en-UK">
+<head>
+  <title id = "pageName">Tim Wai Khoo </title>
+  <meta charset = "utf-8">
+  <meta name="author" content="Khoo Tim Wai">
+  <meta name="description" content="Personal website">
+  <meta name="keywords" content="Tim Wai,Khoo,website,">
+  <meta name="viewport" content="width=device_width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/Website.css">
+  <link rel="stylesheet" href="css/Resume.css">
+</head>
+<script src="jquery-3.3.1.js"></script>
+<script>
+
+$(document).ready(function(){
+  $("#educationbutton").hide();
+  $("#experience").hide();
+  $("#swapon").hide();
+  $("#programminglist").hide();
+  $("#softwarelist").hide();
+
+  $("#programmingbutton").click(function(){
+    $("#programminglist").slideToggle();
+  });
+  $("#softwarebutton").click(function(){
+    $("#softwarelist").slideToggle();
+  });
+
+  $("#swapoff").hover(function(){
+    $("#swapon").slideToggle();
+  }, function() {
+    $("#swapon").slideToggle();
+  });
+  $("#workbutton").click(function(){
+    $("#workbutton").hide();
+    $("#educationbutton").show();
+    $("#experience").slideToggle();
+    $("#education").slideToggle();
+  });
+  $("#educationbutton").click(function(){
+    $("#educationbutton").hide();
+    $("#workbutton").show();
+    $("#education").slideToggle();
+    $("#experience").slideToggle();
+  });
+});
+</script>
+
+<body>
+  <div id="content">
+    <div id="top">
+      <p id="name">{ Khoo Tim Wai }</p>
+    </div>
+    <div id="navigation">
+      <ul id="nav">
+        <li><a href="Homepage.html">Home</a></li>
+        <li><a href="About.html">About me</a></li>
+        <li><a href="Resume.html">Resume</a></li>
+        <li><a href="Gallery.html">Gallery</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div id="Contentcontainer">
+
+      <div id="swapoff">
+        <h1 id="workbutton">Education</h1>
+        <h1 id="educationbutton">Work Experience/Positions of responsibility</h1>
+      </div>
+      <div id="swapon">
+        <h3>Click the title to swap!</h3>
+      </div>
+
+      <div class="timeline" id="education">
+        <div class="container left">
+          <div class="content">
+            <h2>2014-2018</h2>
+            <p>The University of Manchester</p>
+            <p>MEng Electrical and Electronic Engineering</p>
+            <p>[Second Class Upper (2:1)]</p>
+          </div>
+        </div>
+        <div class="container right">
+          <div class="content">
+            <h2>2013-2014</h2>
+            <p>Taylor's College Sri Hartamas</p>
+            <p>A-Levels</p>
+            <p>[3B - Mathematics, Chemistry, Physics]</p>
+          </div>
+        </div>
+        <div class="container left">
+          <div class="content">
+            <h2>2008-2012</h2>
+            <p>Wesley Methodist School Kuala Lumpur</p>
+            <p>Sijil Pelajaran Malaysia (SPM)</p>
+            <p>[4A+, 4A, 1B+, 1B]<p>
+          </div>
+        </div>
+        <div class="container right">
+          <div class="content">
+            <h2>2002-2007</h2>
+            <p>Went to SK Bukit Damansara for my primary school education.</p>
+          </div>
+        </div>
+        <div class="container left">
+          <div class="content">
+            <h2>2000</h2>
+            <p>Learnt how to tie my shoelaces</p>
+          </div>
+        </div>
+        <div class="container right">
+          <div class="content">
+            <h2>1995</h2>
+            <p>I was born!</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline" id="experience">
+        <div class="container left">
+          <div class="content">
+            <h2>2017</h2>
+            <p>Marketing Intern</p>
+            <p>Malaysia SME</p>
+            <p></p>
+          </div>
+        </div>
+        <div class="container right">
+          <div class="content">
+            <h2>2017-2018</h2>
+            <p>Student Representative</p>
+            <p>Studen-Staff Liaison Committee</p>
+            <p></p>
+          </div>
+        </div>
+        <div class="container left">
+          <div class="content">
+            <h2>2016-2017</h2>
+            <p>Part Time Crew</p>
+            <p>Gosh Promo UK</p>
+            <p><p>
+          </div>
+        </div>
+        <div class="container right">
+          <div class="content">
+            <h2>2015-2016</h2>
+            <p>Talent Management</p>
+            <p>AIESEC Manchester</p>
+            <p></p>
+          </div>
+        </div>
+        <div class="container left">
+          <div class="content">
+            <h2>2011-2012</h2>
+            <p>Board Member (Asst. Community Service Director)</p>
+            <p>Interact Club WMSKL</p>
+            <p></p>
+          </div>
+        </div>
+        <div class="container right">
+          <div class="content">
+            <h2>2011-2012</h2>
+            <p>Asst. Troop Leader</p>
+            <p>Scouts WMSKL</p>
+            <p></p>
+          </div>
+        </div>
+      </div>
+
+      <div id="emptypadding">
+      </div>
+
+      <div>
+        <ul class="skillsSectionContainer">
+          <li class="skillsSection"><a id="programmingbutton" href="#/">Programming Languages</a></li>
+          <li class="skillsSection"><a id="softwarebutton" href="#/">Software</a></li>
+        </ul>
+      </div>
+
+      <ul class="skillsSectionContainer">
+        <li class="skillsSection" id="programmingContainer"><p id="programminglist">Java<br>HTML5<br>CSS<br>JavaScript<br>Python</p></li>
+        <li class="skillsSection" id="softwareContainer"><p id="softwarelist">MATLAB<br>Altium Design<br>Solidworks<br>Simulink<br>LabVIEW<br>MicroSoft Office (Word, Powerpoint, Excel)</p></li>
+      </ul>
+
+
+
+        <div id="resumediv">
+          <h2>If you'd like, you could download a pdf copy of my resume below.</h2>
+          <a id="resumelink" href="Khoo Tim Wai (M).pdf" download="Tim Wai's CV">
+            <div class="linkcontainer">
+              <img id="resumeimg" class="contact" src="images/download.png" alt="CV">
+              <div class="overlay">
+                <div class="text">CV</div>
+              </div>
+            </div>
+          </a>
+        </div>
+    </div>
+    <div class="clearfooter">
+    </div>
+  </div>
+  <div id="footer">
+    <p id="created-by"> Website designed by me (with a lot of help from the internet!)</p>
+  </div>
+
+</body>
+
+</html>

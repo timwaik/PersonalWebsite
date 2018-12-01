@@ -1,0 +1,16 @@
+/*HOMEPAGE SPECIFIC CSS*/
+
+#profile {
+  float: none;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 2px solid #ddd;
+}
+
+#homepageleft {
+	border-right: 1px solid;
+}
+
+/*HOMEPAGE CSS END*/
+/*****************************************/

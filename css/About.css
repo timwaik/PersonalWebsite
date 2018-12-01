@@ -1,0 +1,46 @@
+/*ABOUT SPECIFIC CSS*/
+
+table {
+	width: 100%;
+	padding-bottom: 35px;
+}
+
+th, td {
+	width: 25%;
+	height: 50px;
+	font-size: 20pt;
+	text-align: center;
+}
+
+th {
+	border-bottom: 1px solid black;
+	border-left: 21px solid transparent;
+	border-right: 21px solid transparent;
+}
+
+#aboutpageright {
+	border-left: 1px solid;
+}
+
+.bottomcontent {
+	width: 100%;
+	text-align: center;
+}
+
+#redacted {
+  color: black;
+  background-color: black;
+}
+
+.smallTitle {
+	margin-top: 15px;
+	padding-bottom: 15px;
+}
+
+.smallTitle2 {
+	margin-top: 330px;
+	padding-bottom: 15px;
+}
+
+/*ABOUT CSS END*/
+/*****************************************/
